@@ -2,9 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({
-    origin: 'https://webdeploymenttask-production.up.railway.app'
-  }));
+app.use(cors());
               // allow cross-origin
 app.use(express.json());
 
